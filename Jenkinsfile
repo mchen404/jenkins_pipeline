@@ -1,3 +1,3 @@
 stage('Print'){
-  echo 'Hello'
+  echo 'Hello!'
 }
