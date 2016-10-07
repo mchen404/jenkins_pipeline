@@ -8,6 +8,6 @@ node{
   }
 
   stage('Sonar'){
-    step([$class: 'SonarRunnerBuilder'])
+    sonarScanner()
   }
 }
