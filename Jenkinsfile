@@ -1,5 +1,13 @@
-stage('Print'){
-  echo 'Hello!'
-}
+node{
+  stage('Checkout'){
+    checkout scm
+  }
+  
+  stage('Print'){
+    echo 'Hello!'
+  }
 
-input message:'LGTM', submitter: 'it-ops'
+  stage('Sonar'){
+    step([$class: 'SonarRunnerBuilder'])
+  }
+}
