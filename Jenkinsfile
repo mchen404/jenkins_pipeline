@@ -1,7 +1,9 @@
-stage('Print'){
-  echo 'Hello!'
-}
+node{
+  stage('Print'){
+    echo 'Hello!'
+  }
 
-stage('Sonar'){
-  step([$class: 'SonarRunnerBuilder'])
+  stage('Sonar'){
+    step([$class: 'SonarRunnerBuilder'])
+  }
 }
