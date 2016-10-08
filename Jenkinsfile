@@ -7,7 +7,7 @@ node{
       updateGitHubStatus("Checkout", "success")
     }
   }
-  catch{
+  catch(err){
     updateGitHubStatus("Checkout", "failure")
   }
   
