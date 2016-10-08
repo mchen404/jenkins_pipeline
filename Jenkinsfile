@@ -4,7 +4,6 @@ node{
   
   stage('Checkout'){
     checkout scm
-    echo git_sha
   }
   
   stage('Print'){
