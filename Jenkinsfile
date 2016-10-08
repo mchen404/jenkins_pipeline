@@ -3,7 +3,8 @@ node{
   stage('Checkout'){
     checkout scm
     
-    gitCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+
+    def gitCommit = sh script: 'git rev-parse HEAD', returnStatus: true
     echo gitCommit
   }
   
