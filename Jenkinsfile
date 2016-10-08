@@ -4,7 +4,7 @@ node{
     checkout scm
     
 
-    def gitCommit = sh script: 'git rev-parse HEAD', returnStatus: true
+    def gitCommit = bat 'git rev-parse HEAD'
     echo gitCommit
   }
   
