@@ -2,7 +2,7 @@ node{
 
   properties([
     pipelineTriggers([
-      scm('H/5 * * * *')
+      cron('H/5 * * * *')
     ])
   ])
   
