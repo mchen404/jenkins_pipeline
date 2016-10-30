@@ -1,5 +1,5 @@
 def print_script
-something {
+masterBuild {
   sh 'ls'
 
   print_script = load 'print.groovy'
