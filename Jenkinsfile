@@ -1,13 +1,10 @@
+load 'print.groovy'
+
 node{
 
-  properties([
-    pipelineTriggers([
-      cron('H/5 * * * *')
-    ])
-  ])
   
   stage('Print'){
-    echo 'Hello!'
+    print_hello()
   }
 
 
