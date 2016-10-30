@@ -1,3 +1,5 @@
+sh 'ls'
+
 def print_script = load 'print.groovy'
 
 node{
