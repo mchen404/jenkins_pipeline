@@ -7,6 +7,9 @@ masterBuild {
 
 node{
 
+  stage('Checkout'){
+    checkout scm
+  }
   
   stage('Print'){
     print_script.print_hello()
