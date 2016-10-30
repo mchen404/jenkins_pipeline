@@ -1,10 +1,10 @@
-load 'print.groovy'
+def print_script = load 'print.groovy'
 
 node{
 
   
   stage('Print'){
-    print_hello()
+    print_script.print_hello()
   }
 
 
