@@ -1,9 +1,10 @@
 def print_script
-{
+something {
   sh 'ls'
 
   print_script = load 'print.groovy'
 }
+
 node{
 
   
