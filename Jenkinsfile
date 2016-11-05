@@ -8,7 +8,6 @@ node{
   }
 
   stage('Sonar'){
-    sonarScanner
-    step([$class: 'SonarRunnerBuilder'])
+    step([$class: 'GitHubPRCommentPublisher', comment: [content: 'test comment']])
   }
 }
