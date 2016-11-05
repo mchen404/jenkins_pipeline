@@ -8,7 +8,7 @@ node{
   }
 
   stage('Sonar'){
-    bash "env"
+    bat "env"
     step([$class: 'GitHubPRCommentPublisher', comment: [content: 'test comment']])
   }
 }
