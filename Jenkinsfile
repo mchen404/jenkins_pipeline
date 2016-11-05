@@ -8,6 +8,7 @@ node{
   }
 
   stage('Sonar'){
+    echo env
     step([$class: 'GitHubPRCommentPublisher', comment: [content: 'test comment']])
   }
 }
