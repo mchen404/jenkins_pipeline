@@ -1,3 +1,5 @@
+test_load = load "print.groovy"
+
 node{
 
   stage('Checkout'){
@@ -5,7 +7,7 @@ node{
   }
   
   stage('Print'){
-    step([$class: 'GitHubPRCommentPublisher', comment: [content: 'test comment']])
+    test_load.print_hello()
   }
 
 
